@@ -1,10 +1,10 @@
 ﻿# The script of the game goes in this file.
 
 image zack = "zack.png"
-image zack talk = "zack_talk.png"
-image zack smile = "zack_smile.png"
+image zack talk = "zack-talk.png"
+image zack smile = "zack-smile.png"
 image dad = "zacks_dad.png"
-image bg livingroom = "livingroom_bg.png"
+image bg livingroom = "livingroom-bg.png"
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
