@@ -1,45 +1,34 @@
 ﻿# The script of the game goes in this file.
 
-image zack = "zack.png"
-image zack talk = "zack-talk.png"
-image zack smile = "zack-smile.png"
-image dad = "zacks_dad.png"
-image bg livingroom = "livingroom-bg.png"
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define zc = Character("Zack Casey")
-define zcdad = Character("Zack's Dad")
-
-
 # The game starts here.
 
 label start:
     
     scene bg livingroom
-
-    show zack talk at left
-
-    zc "You've created a new Ren'Py game."
-
-    zc "Once you add a story, pictures, and music, you can release it to the world!"
     
-    show zack
+    everyone "Happy birthday!"
+    
+    "November 14th. My birthday. I just turned 18 years old today."
+    
+    "I got varies sorts of gifts as well as a new phone, video games, and a gift card."
+
+    show zack happy talk at left
+
+    zc "Thank you! Thank you! Thank you!"
     
     show dad at right
     
-    zcdad "Are you we in Ren'Py, son?"
+    show zack puzzled
     
-    show zack smile
+    zcdad "Don't get what's on your list."
     
-    zc "Umm.... Yes."
+    show zack puzzled talk
     
-    zc "It's new. And different."
+    zc "Okay."
     
-    show zack talk
+    show zack puzzled
     
-    zc "But I wish we would move away from Flash."
+    zcdad "Now go upstairs, and have fun."
     
 
     return
