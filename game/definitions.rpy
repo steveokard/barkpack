@@ -10,6 +10,6 @@ image bg livingroom = "livingroom-bg.png"
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define everyone = Character("Everyone")
 define zackc = Character("Zack Casey")
 define bobc = Character("Bob Casey")
+define johng = Character("John Grenon")
