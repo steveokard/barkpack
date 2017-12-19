@@ -10,7 +10,7 @@ label start:
     
     "November 14th. My birthday. I just turned 18 years old today."
     
-    "I got varies sorts of gifts as well as a new phone, video games, and a gift card."
+    "I got various sorts of gifts as well as a new phone, video games, and a gift card."
 
     show zack happy talk at left
 
