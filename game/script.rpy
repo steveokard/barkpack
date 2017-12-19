@@ -12,23 +12,23 @@ label start:
     
     "I got various sorts of gifts as well as a new phone, video games, and a gift card."
 
-    show zack happy talk at left
+    show zackc happy talk at left
 
-    zc "Thank you! Thank you! Thank you!"
+    zackc "Thank you! Thank you! Thank you!"
     
-    show dad at right
+    show bobc at right
     
-    show zack puzzled
+    show zackc puzzled
     
-    zcdad "Don't get what's on your list."
+    bobc "Don't get what's on your list."
     
-    show zack puzzled talk
+    show zackc puzzled talk
     
-    zc "Okay."
+    zackc "Okay."
     
-    show zack puzzled
+    show zackc puzzled
     
-    zcdad "Now go upstairs, and have fun."
+    bobc "Now go upstairs, and have fun."
     
 
     return
