@@ -70,9 +70,36 @@ label start:
     show zackc talk
     
     zackc "What? Trains can be restricting at times."
-    
+
     return
     
 label trucksim:
+    
+    return
+    
+label question:
+    
+    johng "Question."
+    
+    zackc "Shoot."
+    
+    johng "Have you ever stole something before?"
+    
+    zackc "Hmm..."
+    zackc "There was that one time I forgot to ask dad to purcahse some bubble gum I had in my pocket."
+    
+    johng "What happended!?"
+    
+    zackc "The censors went off but the guard took it as a false alarm."
+    
+    johng "Did you do it again?"
+    
+    zackc "What?! No! I didn't mean do it in the first place. I'd be rather pay for my own goods."
+    
+    johng "Huh..."
+    
+    zackc "Anyway! Truck simulator is done."
+    
+    johng "... Okay."
     
     return
