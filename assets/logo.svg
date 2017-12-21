@@ -14,7 +14,7 @@
    viewBox="0 0 117.30311 30.339172"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="logo.svg"
    inkscape:export-filename="logo.png"
    inkscape:export-xdpi="108.26653"
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="218.17027"
-     inkscape:cy="46.359416"
+     inkscape:cx="218.67535"
+     inkscape:cy="33.732509"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,10 +39,10 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:pagecheckerboard="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1200"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:window-width="1366"
+     inkscape:window-height="665"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -61,12 +61,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-35.318439,-73.439297)">
-    <path
-       style="fill:#ffffff;stroke:none;stroke-width:0.27868226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 45.092859,85.090936 c 3.774238,-4.254896 16.974415,-8.810298 26.718629,-9.236279 9.744216,-0.42598 16.167249,-0.897971 26.409743,-0.897971 10.242539,0 61.011279,8.461385 44.479609,22.192725 C 126.16918,110.88075 57.233975,99.69018 47.100617,95.48175 36.967258,91.27332 41.31862,89.345832 45.092859,85.090936 Z"
-       id="path827"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="zzzzzz" />
     <g
        aria-label="What's new,"
        transform="matrix(0.94079598,-0.07858909,0.08999266,1.0554122,0,0)"

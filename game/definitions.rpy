@@ -31,22 +31,14 @@ init -1 python:
     inv_page = 0 # initial page of the inventory screen
     item = None
     class Player(renpy.store.object):
-        def __init__(self, name, max_hp=0, max_mp=0, element=None):
+        def __init__(self, name):
             self.name=name
-            self.max_hp=max_hp
-            self.hp=max_hp
-            self.max_mp=max_mp
-            self.mp=max_mp
-            self.element=element
-    player = Player("Derp", 100, 50)
+    player = Player("Derp")
     
     class Item(store.object):
-        def __init__(self, name, player=None, hp=0, mp=0, element="", image="", cost=0):
+        def __init__(self, name, player=None, image="", cost=0):
             self.name = name
             self.player=player # which character can use this item?
-            self.hp = hp # does this item restore hp?
-            self.mp = mp # does this item restore mp?
-            self.element=element # does this item change elemental damage?
             self.image=image # image file to use for this item
             self.cost=cost # how much does it cost in shops?
         def use(self): #here we define what should happen when we use the item
@@ -64,7 +56,7 @@ init -1 python:
                 player.element=self.element #item to change elemental damage; we don't drop it, since it's not a consumable item
 
     class Inventory(store.object):
-        def __init__(self, money=10):
+        def __init__(self, money):
             self.money = money
             self.items = []
         def add(self, item): # a simple method that adds an item; we could also add conditions here (like check if there is space in the inventory)

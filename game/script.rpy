@@ -13,8 +13,9 @@ label start:
     "I got various sorts of gifts as well as a new phone, console games, and a gift card."
     
     python:
-        user = Player("Derp", 100, 50)
-        inventory = Inventory()
+        user = Player("Zack Casey")
+        inventory = Inventory(money=50)
+        trucksimitem = Item("Truck simulator", image="gui/inv_trucksim.png", cost=10)
     
     show zackc happy talk
 
@@ -75,13 +76,40 @@ label start:
     
     zackc "What? Trains can be restricting at times."
     
-    return
+    show zackc
+    
+menu:
+    
+    "Buy truck simulator":
+        jump trucksim
+        
+    "Skip":
+        jump question
     
 label trucksim:
     
-    show screen inventory_button
+    # show bg pistonstore
     
-    return
+    hide johng
+    hide zackc
+    
+    zackc "Luckily Piston is having one of their sales."
+    
+    johng "When don't have they have sales?"
+    
+    zackc "Good point."
+    
+menu:
+    
+    "Purchase game":
+        zackc "Done!"
+        $inventory.buy(trucksimitem)
+        
+    "Maybe later":
+        zackc "I'll get a little later."
+        johng "How long does it have?"
+        zackc "Two days."
+        jump question
     
 label question:
     
