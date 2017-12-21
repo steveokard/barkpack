@@ -11,7 +11,11 @@ label start:
     "November 14th. My birthday. I just turned 18 years old today."
     
     "I got various sorts of gifts as well as a new phone, console games, and a gift card."
-
+    
+    python:
+        user = Player("Derp", 100, 50)
+        inventory = Inventory()
+    
     show zackc happy talk
 
     zackc "Thank you! Thank you! Thank you!"
@@ -70,10 +74,12 @@ label start:
     show zackc talk
     
     zackc "What? Trains can be restricting at times."
-
+    
     return
     
 label trucksim:
+    
+    show screen inventory_button
     
     return
     

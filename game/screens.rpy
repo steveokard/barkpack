@@ -1508,7 +1508,44 @@ style slider_pref_slider:
     variant "small"
     xsize 600
 
+################################################################################
+## Inventory
+################################################################################
 
+screen inventory_button:
+    textbutton "Show Inventory" action [ Show("inventory_screen"), Hide("inventory_button")] align (.95,.04)
+            
+screen inventory_screen:    
+    add "gui/inventory.png" # the background
+    modal True #prevent clicking on other stuff when inventory is shown
+    #use battle_frame(char=player, position=(.97,.20)) # we show characters stats (mp, hp) on the inv. screen
+    #use battle_frame(char=dog, position=(.97,.50))
+    hbox align (.95,.04) spacing 20:
+        textbutton "Close Inventory" action [ Hide("inventory_screen"), Show("inventory_button"), Return(None)]
+    $ x = 515 # coordinates of the top left item position
+    $ y = 25
+    $ i = 0
+    $ sorted_items = sorted(inventory.items, key=attrgetter('element'), reverse=True) # we sort the items, so non-consumable items that change elemental damage (guns) are listed first
+    $ next_inv_page = inv_page + 1            
+    if next_inv_page > int(len(inventory.items)/9):
+        $ next_inv_page = 0
+    for item in sorted_items:
+        if i+1 <= (inv_page+1)*9 and i+1>inv_page*9:
+            $ x += 190
+            if i%3==0:
+                $ y += 170
+                $ x = 515
+            $ pic = item.image
+            $ my_tooltip = "tooltip_inventory_" + pic.replace("gui/inv_", "").replace(".png", "") # we use tooltips to describe what the item does.
+            imagebutton idle pic hover pic xpos x ypos y action [Hide("gui_tooltip"), Show("inventory_button"), SetVariable("item", item), Hide("inventory_screen"), item_use] hovered [ Play ("sound", "sfx/click.wav"), Show("gui_tooltip", my_picture=my_tooltip, my_tt_ypos=693) ] unhovered [Hide("gui_tooltip")] at inv_eff
+            if player.element and (player.element==item.element): #indicate the selected gun
+                add "gui/selected.png" xpos x ypos y anchor(.5,.5)
+        $ i += 1
+        if len(inventory.items)>9:
+            textbutton _("Next Page") action [SetVariable('inv_page', next_inv_page), Show("inventory_screen")] xpos .475 ypos .83
+
+screen gui_tooltip (my_picture="", my_tt_xpos=58, my_tt_ypos=687):
+    add my_picture xpos my_tt_xpos ypos my_tt_ypos
 
 
 
