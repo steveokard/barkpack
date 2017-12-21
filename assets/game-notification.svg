@@ -17,8 +17,8 @@
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="game-notification.svg"
    inkscape:export-filename="../game/gui/game-notification.png"
-   inkscape:export-xdpi="67.734596"
-   inkscape:export-ydpi="67.734596">
+   inkscape:export-xdpi="71.454124"
+   inkscape:export-ydpi="71.454124">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -35,7 +35,7 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="663"
+     inkscape:window-height="665"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -67,10 +67,11 @@
        width="51.788609"
        height="14.434754"
        x="1.5089564"
-       y="124.30954"
+       y="122.72205"
        ry="5.2292485" />
     <g
-       id="g884">
+       id="g884"
+       style="fill:#d5e5ff">
       <rect
          ry="3.4980574"
          y="105.21488"
@@ -78,12 +79,12 @@
          height="33.639881"
          width="92.604164"
          id="rect817"
-         style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.24244015;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#d5e5ff;fill-opacity:1;stroke:none;stroke-width:0.24244015;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          inkscape:connector-curvature="0"
          id="path857"
          d="m 41.577365,107.14252 -9.827379,6.99256 10.394344,-2.45684 z"
-         style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#d5e5ff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
   </g>
 </svg>
