@@ -1,5 +1,5 @@
 # Bob Casey
 
-## Life leading up to What's New, Furry Blue?
+## Life leading up to Bark Pack
 
-Bob's relationship with his wife slowly grew rockier over the decade. His wife would wind up filing for a divorce midway into their son's teen years. He would later go to raise Zack after she left.
+Bob's relationship with his wife slowly grew rockier leading up to Zack's 16th birthday. They remain undecided on who should have custody over him. They decided to leave choice up to him.

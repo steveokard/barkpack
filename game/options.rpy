@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("What's New, Furry Blue?")
+define config.name = _("Bark Pack")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -36,7 +36,7 @@ define gui.about = _("")
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "WhatsewFurryBlue"
+define build.name = "barkpack"
 
 
 ## Sounds and music ############################################################
