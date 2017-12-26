@@ -1509,6 +1509,50 @@ style slider_pref_slider:
     xsize 600
 
 ################################################################################
+## Episode screen
+################################################################################
+
+screen episodes(adj):
+
+    frame:
+        xsize 640
+        xalign .5
+        ysize 485
+        ypos 30
+
+        has side "c r b"
+
+        viewport:
+            yadjustment adj
+            mousewheel True
+
+            vbox:
+                for i in episodes:
+
+                    if i.kind == "episode":
+
+                        textbutton i.title:
+                            action Return(i)
+                            left_padding 20
+                            xfill True
+
+                    else:
+
+                        null height 10
+                        text i.title alt ""
+                        null height 5
+
+
+
+
+        bar adjustment adj style "vscrollbar"
+
+        textbutton _("That's enough for now."):
+            xfill True
+            action Return(False)
+            top_margin 10
+
+################################################################################
 ## Inventory
 ################################################################################
 
