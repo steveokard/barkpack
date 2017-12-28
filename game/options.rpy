@@ -18,7 +18,7 @@ define config.name = _("Bark Pack")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -37,6 +37,10 @@ define gui.about = _("")
 ## or semicolons.
 
 define build.name = "barkpack"
+
+
+## Automatic updates
+define build.include_update = True
 
 
 ## Sounds and music ############################################################
@@ -141,7 +145,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "WhatsewFurryBlue-1513537951"
+define config.save_directory = "BarkPack-1513537951"
 
 
 ## Icon ########################################################################
@@ -184,8 +188,8 @@ init python:
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
@@ -209,4 +213,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/test-project"
+define build.itch_project = "renpytom/test-project"

@@ -30,7 +30,7 @@ label newhome:
     # hide kitw
 
     # show bg crashm livingroom
-    
+
     crashm "Bedrooms are upstairs, and you'll find a bathroom on either floor."
     kitw "Thanks. Went before I got off. All the sleeper compartments had restrooms."
     crashm "More time for us."
@@ -59,18 +59,42 @@ label newhome:
 
     crashm "You told about this for a long time, but you never told me why you came to Zoo Heights."
     "It was at this moment that I wish I had to use the restroom."
-    crashm "Kit?"
+
+    menu:
+        crashm "Kit?"
+        "Explain":
+            jump explain
+        "Don't explain":
+            $ kitsreason = True
+            jump sorry
+               
+label explain:
+
     kitw "I wanted to get away from my family."
     crashm "How come?"
     kitw "They're rich, powerful snobs,"
-    kitw "and here I am being forced to live up to their high standards."
+    kitw "and here I am being forced to live up to their high standards"
+    kitw "in order to please them."
     crashm "And?"
-    kitw "I didn't want to. I felt like I was living a lie. So I left."
+    kitw "I didn't want to! I felt like I was living a lie. So I left."
+    kitw "I wanted to be with someone tha-"
 
     # hide crashm
     # hide kitw
     # show crashkithug
 
+    "At that moment, Crash hugged me."
     "I can't remember the last time I was hugged."
+    
+    jump start
 
-    return
+label sorry:
+
+    show screen notify("Kit's Reason")
+    
+    kitw "I'm sorry, Crash."
+    "Crash stared into my eyes as I held in my tears,"
+    "and gave me a pat on the back."
+    crashm "I'm here for you."
+
+    jump start

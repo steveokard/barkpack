@@ -1,6 +1,6 @@
-﻿# The script of the game goes in this file.
-
-# The game starts here.
+﻿################################################################################
+## The episode window
+################################################################################
 
 # This is used to preserve the state of the scrollbar on the selection
 # screen.

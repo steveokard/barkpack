@@ -52,4 +52,5 @@ init python:
 
     Section(_("Episodes"))
 
+    # Episode list
     Episode("newhome", _("New Home"))
