@@ -10,7 +10,7 @@ label zackschoice:
 
     if kitsreason:
         
-        crashm "I tried ask Kit why he moved here but he refuses."
+        crashm "I tried to ask Kit why he moved here but he refuses."
         crashm "I don't know what to do."
         tomascw "Give him time, Crash."
         tomascw "Sounds like he's been through a lot."

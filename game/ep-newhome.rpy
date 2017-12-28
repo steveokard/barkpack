@@ -11,7 +11,7 @@ label newhome:
     "I had just arrived at Zoo Heights."
     "It was nothing like the small town I had come from."
     "Mice roamed the station as elephants towered in and out."
-    "I was waiting for a freind of mine who I'd be staying with."
+    "I was waiting for a friend of mine who I'd be staying with."
 
     # show crashm smile at left
 
@@ -41,23 +41,23 @@ label newhome:
     "I went upstairs. Unpacked. Got out a few goodies for the night."
     "I was't sure how long I was staying."
 
-    crashm "You can the rent this room out if you'd like."
+    crashm "You can rent this room if you'd like."
 
     "My ears perked at the sound of the sudden offer."
 
     kitw "Really?"
     crashm "Of course."
 
-    "It was tempting. I had no where else live. I figured I'd stay in a hotel."
+    "It was tempting. I had no where else to live. I figured I'd stay in a hotel."
     "Crash and I go back a pretty long ways away. I knew he'd understand if I declined ..."
     "... least I hoped ..."
-    "... yet I didn't want to decline. Living with a freind is far better then any ol' hotel."
+    "... yet I didn't want to decline. Living with a friend is far better then any ol' hotel."
 
     kitw "So what's the price?"
 
     # show bg crashm livingroom
 
-    crashm "You told about this for a long time, but you never told me why you came to Zoo Heights."
+    crashm "You talked to me about this for a long time, but you never told me why you came to Zoo Heights."
     "It was at this moment that I wish I had to use the restroom."
 
     menu:
