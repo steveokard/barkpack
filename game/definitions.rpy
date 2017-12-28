@@ -15,9 +15,13 @@ image bg livingroom = "livingroom-bg.png"
 ## Character definitions
 ################################################################################
 
+define unknown = Character("Unknown")
 define zackc = Character("Zack Casey")
 define bobc = Character("Bob Casey")
 define johng = Character("John Grenon")
+define kitw = Character("Kit Welsh")
+define crashm = Character("Crash McCloud")
+define ruf75 = Character("RUF 751")
 
 ################################################################################
 ## Inventory
@@ -33,7 +37,7 @@ init -1 python:
     class Player(renpy.store.object):
         def __init__(self, name):
             self.name=name
-    player = Player("Derp")
+    # player = Player("Derp")
     
     class Item(store.object):
         def __init__(self, name, player=None, image="", cost=0):

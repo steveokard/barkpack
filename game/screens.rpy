@@ -1517,7 +1517,7 @@ screen episodes(adj):
     frame:
         xsize 640
         xalign .5
-        ysize 485
+        ysize 480
         ypos 30
 
         has side "c r b"

@@ -52,4 +52,4 @@ init python:
 
     Section(_("Episodes"))
 
-    # Episode("episode_playing", _("Player Experience"))
+    Episode("newhome", _("New Home"))
